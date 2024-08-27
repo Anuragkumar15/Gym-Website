@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Scrollbar thumb color */
+    border-radius: 6px; /* Rounded corners for the scrollbar thumb */
+    border: 3px solid #f1f1f1; /* Space around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #5e9296; /* Thumb color on hover */
+}
+footer{
+    background-color: teal;
+    z-index: -2;
+    position: relative;
+}
+footer>#foot{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(66, 66, 75);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    clip-path: polygon(51% 37%, 85% 62%, 100% 100%, 100% 100%, 25% 100%, 0 100%, 0 0);}
+.topbtn {
+    display: none;
+    cursor: pointer;
+    position: fixed; 
+    bottom: 40px;
+    right: 20px;
+    z-index: 999;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background:#e6b1d8;
+    border: none;
+  }
+  
+  .topbtn i{
+    font-size: 2vw;
+    color: #111;
+  }
+
+  /* about section code start */
+  .about-h{
+    width: 100%;
+    height: 90vh;
+    background:linear-gradient(rgba(255, 255, 255, 0.199),rgba(255, 255, 255, 0.205),rgba(255, 255, 255, 0.247)), url("../images/fitness-1882721_640.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .about-h h1{
+   font-size: 15vw;
+    text-transform: capitalize;
+    color: transparent;
+    background: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f, #14b8a6, #fcac23 50%, #347e85 98%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 300% 100%;
+    animation: 6s infinite animat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    -webkit-text-stroke-color: transparent;
+    margin-bottom: 1rem;
+}
+::selection {
+    background-color: #ffcd04;
+    color: #7f098a;
+}
+@keyframes animat{
+    0%, 100% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+.fes{
+    position: relative;
+    top: -100px;
+    background-color: rgb(211, 140, 140);
+    /* height: 300px; */
+}
